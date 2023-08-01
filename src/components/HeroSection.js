@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import Button from "./Button";
 import "./HeroSection.css";
 import "../App.css";
-import Contact from "../pages/Contact";
 function HeroSection() {
   return (
     <div className="hero-container">
@@ -11,12 +10,12 @@ function HeroSection() {
       <span className="hero-underline"></span>
       <h1>RANGTARANG GROUP</h1>
       <div className="hero-btns">
-        <Link>
+        <Link to="/Events">
           <Button className="btns" buttonStyle="btn--outline" buttonsize="btn--large">
             Learn More
           </Button>
         </Link>
-        <Link>
+        <Link to="/Events">
           <Button className="btns" buttonStyle="btn--primary" buttonsize="btn--large">
             Upcoming Events
           </Button>

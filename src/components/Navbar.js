@@ -48,15 +48,17 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/Contact_Us" className="nav-links-mobile" onClick={closeMobileMenu}>
+            <Link to="/Contact" className="nav-links-mobile" onClick={closeMobileMenu}>
               Contact Us
             </Link>
           </li>
         </ul>
         {button && (
-          <Button buttonStyle="btn--outline" onClick={handleClick}>
-            Contact us
-          </Button>
+          <Link to="/Contact">
+            <Button buttonStyle="btn--outline" onClick={handleClick}>
+              Contact us
+            </Button>
+          </Link>
         )}
       </div>
     </nav>

@@ -1,0 +1,22 @@
+.join-image {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url("../../public/images/join.jpg");
+  background-position: center;
+  width: auto;
+  height: 18rem;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+h3 {
+  color: #f96167;
+  margin-bottom: 5rem;
+}
+
+.join-image > P {
+  color: #f9e795;
+  margin-bottom: 4rem;
+}
+
+.join-image > Button {
+  margin: 40px;
+}

@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  height: 70vh;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #f9e795;
+}
+
+input,
+textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+}
+textarea {
+  /* Adjust the height to make the textarea larger */
+  height: 150px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #f96167;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.successMessage {
+  color: #f96167;
+}

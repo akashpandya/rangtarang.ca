@@ -1,19 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "./components/Button";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  const [email, setEmail] = useState("");
+  const [isSubscribed, setIsSubscribed] = useState(false);
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+
+    setIsSubscribed(true);
+  };
+
   return (
     <div className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">Join the Adventure newsletter to receive our best vacation deals</p>
-        <p className="footer-subscription-text">You can unsubscribe at anytime.</p>
+        <p className="footer-subscription-text">You can unsubscribe at any time.</p>
         <div className="input-areas">
-          <form action="">
-            <input type="email" name="email" placeholder="Your Email" className="footer-input" />
-            <Button buttonStyle="btn--outline">Subscribe</Button>
+          <form action="https://formspree.io/f/maygqvkb" method="POST" onSubmit={handleSubscribe}>
+            <input type="email" name="email" placeholder="Your Email" className="footer-input" value={email} onChange={handleEmailChange} />
+            <input type="hidden" name="_cc" value="your-email@example.com" />
+            <Button buttonStyle="btn--outline" type="submit">
+              Subscribe
+            </Button>
           </form>
+          {isSubscribed ? <p>You have successfully subscribed!</p> : null}
         </div>
       </section>
       <div class="footer-links">
@@ -28,7 +45,7 @@ function Footer() {
           </div>
           <div class="footer-link-items">
             <h2>Contact Us</h2>
-            <Link to="/">Contact</Link>
+            <Link to="/Contact">Contact</Link>
             <Link to="/">Support</Link>
             <Link to="/">Destinations</Link>
             <Link to="/">Sponsorships</Link>

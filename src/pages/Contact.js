@@ -1,8 +1,9 @@
 import Footer from "../Footer";
+import ContactForm from "../components/ContactForm";
 function Contact() {
   return (
-    <div className="">
-      <div className="contact_us">Contact</div>
+    <div className="contact_us">
+      <ContactForm />
       <Footer />
     </div>
   );

@@ -7,8 +7,7 @@
 
 .home,
 .AboutUs,
-.events,
-.contact_us {
+.events {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -39,6 +38,4 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #f96167;
-  font-size: 100px;
 }

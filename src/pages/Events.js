@@ -3,81 +3,54 @@ import "add-to-calendar-button";
 import "../App.css";
 function Events() {
   return (
-    <div className="">
+    <div className="events_cover">
       <div className="events">
-        <div className="event1">
-          <img src="\images\img_event_1.jpg" alt="img_event_1" className="images_events" />
-          <h1>RangTarang Senior' Club</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum quis unde eveniet tempore fugit cupiditate illum. Unde, quo. Corporis
-            ratione vitae reiciendis delectus, consectetur quis asperiores voluptate? Dolor, nam?
-          </p>
-          <add-to-calendar-button
-            name="Title"
-            options="'Apple','Google'"
-            location="World Wide Web"
-            startDate="2023-08-07"
-            endDate="2023-08-07"
-            startTime="10:15"
-            endTime="23:30"
-            timeZone="America/Los_Angeles"
-          ></add-to-calendar-button>
-        </div>
-        <div className="event2">
-          <img src="\images\img_event_2.jpg" alt="img_event_2" className="images_events" />
-          <h1>RangTarang Karaoke Night</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum quis unde eveniet tempore fugit cupiditate illum. Unde, quo. Corporis
-            ratione vitae reiciendis delectus, consectetur quis asperiores voluptate? Dolor, nam?
-          </p>
-          <add-to-calendar-button
-            name="Title"
-            options="'Apple','Google'"
-            location="World Wide Web"
-            startDate="2023-08-07"
-            endDate="2023-08-07"
-            startTime="10:15"
-            endTime="23:30"
-            timeZone="America/Los_Angeles"
-          ></add-to-calendar-button>
-        </div>
-        <div className="event3">
-          <img src="\images\img_event_3.jpg" alt="img_event_3" className="images_events" />
-          <h1>RangTarang Kids' Club</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum quis unde eveniet tempore fugit cupiditate illum. Unde, quo. Corporis
-            ratione vitae reiciendis delectus, consectetur quis asperiores voluptate? Dolor, nam?
-          </p>
-          <add-to-calendar-button
-            name="Title"
-            options="'Apple','Google'"
-            location="World Wide Web"
-            startDate="2023-08-07"
-            endDate="2023-08-07"
-            startTime="10:15"
-            endTime="23:30"
-            timeZone="America/Los_Angeles"
-          ></add-to-calendar-button>
-        </div>
-        <div className="event4">
-          <img src="\images\img_event_4.jpg" alt="img_event_2" className="images_events" />
-          <h1>RangTarang Ladies' Club</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum quis unde eveniet tempore fugit cupiditate illum. Unde, quo. Corporis
-            ratione vitae reiciendis delectus, consectetur quis asperiores voluptate? Dolor, nam?
-          </p>
-          <add-to-calendar-button
-            name="Title"
-            options="'Apple','Google'"
-            location="World Wide Web"
-            startDate="2023-08-07"
-            endDate="2023-08-07"
-            startTime="10:15"
-            endTime="23:30"
-            timeZone="America/Los_Angeles"
-          ></add-to-calendar-button>
+        <div className="carousel-container">
+          <h1 className="h1">Upcoming Events</h1>
+
+          <div className="carousel-item">
+            <img src="images/family_event.png" alt="img_event_2" className="images_events" />
+            <div class="carousel-text">
+              <h2>RangTarang Summer Picnic 2024</h2>
+              <p>
+                Step into a world of summertime delight at Rangtarang's 2024 picnic extravaganza! Join us for a day of joyous celebration and community spirit
+                nestled in the heart of Ajax, Ontario. Our picnic promises a fusion of activities catering to all ages, from thrilling games and delectable
+                cuisine to captivating cultural showcases that will transport you to distant lands. Save the date and gather your loved ones for a day brimming
+                with laughter, culinary delights, and cherished moments. Embark on an adventure of color and camaraderie - this year's picnic is an event you
+                won't want to miss!
+              </p>
+            </div>
+          </div>
+
+          <h1 className="h1">Past Events</h1>
+
+          <div className="carousel-item">
+            <img src="\images\img_event1_1.jpg" alt="img_event1_1" className="images_events" />
+            <div class="carousel-text">
+              <h2>RangTarang Group Garba 2023</h2>
+              <p>
+                GTA's most original Malhar Group will perform traditional ગરબા, રાસ, સનેડો and much more. Please call committee members to book admission
+                passes. See attached flyer for more information. Admission Fee: $ 10 per person (Age 5 and above). Friday 20th October, 2023 @ Audely Recreation
+                Center Banquet Hall, 1955 Audely Road in Ajax from 7.00 PM onwards. This event is now Sold Out!
+              </p>
+            </div>
+          </div>
+
+          <div className="carousel-item">
+            <img src="images/cards_1.jpg" alt="img_event_2" className="images_events" />
+            <div class="carousel-text">
+              <h2>RangTarang Summer Picnic 2023</h2>
+              <p>
+                Celebrate the colors of summer at Rangtarang's 2023 picnic event! Join us for a day of vibrant fun and togetherness in the heart of Ajax,
+                Ontario. Our picnic promises a kaleidoscope of activities for all ages, from exciting games and delicious food to cultural performances that
+                will dazzle your senses. Mark your calendars and bring your family and friends for a day filled with laughter, great food, and unforgettable
+                memories. Don't miss out on this colorful extravaganza!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );

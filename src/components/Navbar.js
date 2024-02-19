@@ -42,9 +42,15 @@ export default function Navbar() {
               About Us
             </Link>
           </li>
+
           <li className="nav-item">
             <Link to="/Events" className="nav-links" onClick={closeMobileMenu}>
               Events
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/Clubs" className="nav-links" onClick={closeMobileMenu}>
+              Clubs
             </Link>
           </li>
           <li className="nav-item">

@@ -27,6 +27,7 @@ function ContactForm() {
       <button type="submit" disabled={state.submitting}>
         Submit
       </button>
+      <h4>112 Harrisview Street, Ajax ON Canada| Phone: 4165704146 | Email: info@rangtarang.ca </h4>
     </form>
   );
 }

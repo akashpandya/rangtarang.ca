@@ -86,14 +86,8 @@ function Footer() {
             <Link class="social-icon-link instagram" to="https://www.instagram.com/ashish000" target="_blank" aria-label="Instagram">
               <i class="fab fa-instagram" />
             </Link>
-            <Link class="social-icon-link youtube" to="/" target="_blank" aria-label="Youtube">
+            <Link class="social-icon-link youtube" to="https://www.facebook.com/Rangtarangcanada/videos" target="_blank" aria-label="Youtube">
               <i class="fab fa-youtube" />
-            </Link>
-            <Link class="social-icon-link twitter" to="/" target="_blank" aria-label="Twitter">
-              <i class="fab fa-twitter" />
-            </Link>
-            <Link class="social-icon-link twitter" to="/" target="_blank" aria-label="LinkedIn">
-              <i class="fab fa-linkedin" />
             </Link>
           </div>
         </div>

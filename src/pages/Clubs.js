@@ -9,6 +9,7 @@ function Clubs() {
         <div className="club">
           <img src="\images\img_event_3.jpg" alt="img_event_3" className="images_events" />
           <h1>RangTarang Kids' Club</h1>
+
           <p>
             Welcome to Kid's Club, the ultimate weekly gathering spot for kids in Ajax, Ontario, Canada! At Kid's Club, we believe that every child deserves a
             fun and supportive community to grow, learn, and make new friends.

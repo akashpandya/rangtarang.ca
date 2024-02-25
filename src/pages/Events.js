@@ -29,9 +29,9 @@ function Events() {
             <div class="carousel-text">
               <h2>RangTarang Group Garba 2023</h2>
               <p>
-                GTA's most original Malhar Group will perform traditional ગરબા, રાસ, સનેડો and much more. Please call committee members to book admission
-                passes. See attached flyer for more information. Admission Fee: $ 10 per person (Age 5 and above). Friday 20th October, 2023 @ Audely Recreation
-                Center Banquet Hall, 1955 Audely Road in Ajax from 7.00 PM onwards. This event is now Sold Out!
+                GTA's most original Malhar Group performed traditional ગરબા, રાસ, સનેડો and much more. Please called committee members to book admission passes.
+                Saw attached flyer for more information. Admission Fee: $ 10 per person (Age 5 and above). Friday 20th October, 2023 @ Audely Recreation Center
+                Banquet Hall, 1955 Audely Road in Ajax from 7.00 PM onwards. This event was sold out.
               </p>
             </div>
           </div>
@@ -41,10 +41,10 @@ function Events() {
             <div class="carousel-text">
               <h2>RangTarang Summer Picnic 2023</h2>
               <p>
-                Celebrate the colors of summer at Rangtarang's 2023 picnic event! Join us for a day of vibrant fun and togetherness in the heart of Ajax,
-                Ontario. Our picnic promises a kaleidoscope of activities for all ages, from exciting games and delicious food to cultural performances that
-                will dazzle your senses. Mark your calendars and bring your family and friends for a day filled with laughter, great food, and unforgettable
-                memories. Don't miss out on this colorful extravaganza!
+                Celebrated the colors of summer at Rangtarang's 2023 picnic event! Joined us for a day of vibrant fun and togetherness in the heart of Ajax,
+                Ontario. Our picnic promised a kaleidoscope of activities for all ages, from exciting games and delicious food to cultural performances that
+                dazzled your senses. Marked your calendars and brought your family and friends for a day filled with laughter, great food, and unforgettable
+                memories. Didn't miss out on this colorful extravaganza!
               </p>
             </div>
           </div>

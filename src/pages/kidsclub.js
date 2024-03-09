@@ -5,6 +5,7 @@ function kidsclub() {
   return (
     <div>
       <h1>kidsclub</h1>
+      <Footer />
     </div>
   );
 }

@@ -1,11 +1,15 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
+import Clubs from "./pages/Clubs";
 import Contact from "./pages/Contact";
 import Events from "./pages/Events";
-import Clubs from "./pages/Clubs";
+import Home from "./pages/Home";
+import Karaokeclub from "./pages/Karaokeclub";
+import kidsclub from "./pages/Kidsclub";
+import Seniorsclub from "./pages/Seniorsclub";
+import Sportsclub from "./pages/Sportsclub";
 
 function App() {
   return (
@@ -17,6 +21,10 @@ function App() {
         <Route path="/Events" exact Component={Events} />
         <Route path="/Clubs" exact Component={Clubs} />
         <Route path="/Contact" exact Component={Contact} />
+        <Route path="/kidsclub" exact Component={kidsclub} />
+        <Route path="/Seniorsclub" exact Component={Seniorsclub} />
+        <Route path="/Karaokeclub" exact Component={Karaokeclub} />
+        <Route path="/Sportsclub" exact Component={Sportsclub} />
       </Routes>
     </Router>
   );

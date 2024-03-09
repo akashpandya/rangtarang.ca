@@ -1,13 +1,14 @@
 import Footer from "../Footer";
 import "add-to-calendar-button";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 function Clubs() {
   return (
     <div className="container_clubs">
       <div className="clubs">
         <div className="club">
-          <img src="\images\img_event_3.jpg" alt="img_event_3" className="images_events" />
+          <Link to="/Kidsclub"><img src="\images\img_event_3.jpg" alt="img_event_3" className="images_events" /></Link>
           <h1>RangTarang Kids' Club</h1>
 
           <p>
@@ -27,7 +28,7 @@ function Clubs() {
         </div>
 
         <div className="club">
-          <img src="\images\seniors.jpg" alt="img_event_1" className="images_events" />
+          <Link to="/Seniorsclub"><img src="\images\seniors.jpg" alt="img_event_1" className="images_events" /></Link>
           <h1>RangTarang Senior' Club</h1>
           <p>
             Join us every week at Senior's Club, a welcoming gathering designed exclusively for seniors in Ajax, Ontario, Canada. This delightful event provides
@@ -45,7 +46,7 @@ function Clubs() {
           ></add-to-calendar-button>
         </div>
         <div className="club">
-          <img src="\images\sports.jpg" alt="img_event_3" className="images_events" />
+          <Link to="/Sportsclub"><img src="\images\sports.jpg" alt="img_event_3" className="images_events" /></Link>
           <h1>RangTarang Sports Club</h1>
           <p>
             Get active with RangTarang Sports Club! Join us for weekly sports activities and games in Ajax, Ontario, Canada. Whether you're into Cricket,
@@ -63,7 +64,7 @@ function Clubs() {
           ></add-to-calendar-button>
         </div>
         <div className="club">
-          <img src="\images\karaoke.jpg" alt="img_event_3" className="images_events" />
+          <Link to="/Karaokeclub"><img src="\images\karaoke.jpg" alt="img_event_3" className="images_events" /></Link>
           <h1>RangTarang Karaoke Club</h1>
           <p>
             Sing your heart out at RangTarang Karaoke Club! Join us for a night of music, fun, and unforgettable performances in Ajax, Ontario, Canada. Whether

@@ -7,9 +7,10 @@ import Contact from "./pages/Contact";
 import Events from "./pages/Events";
 import Home from "./pages/Home";
 import Karaokeclub from "./pages/Karaokeclub";
-import kidsclub from "./pages/Kidsclub";
+import Kidsclub from "./pages/Kidsclub";
 import Seniorsclub from "./pages/Seniorsclub";
 import Sportsclub from "./pages/Sportsclub";
+import RangtarangSummerPicnic2024 from "./pages/RangtarangSummerPicnic2024";  // Import the new page
 
 function App() {
   return (
@@ -21,10 +22,11 @@ function App() {
         <Route path="/Events" exact Component={Events} />
         <Route path="/Clubs" exact Component={Clubs} />
         <Route path="/Contact" exact Component={Contact} />
-        <Route path="/kidsclub" exact Component={kidsclub} />
+        <Route path="/Kidsclub" exact Component={Kidsclub} />
         <Route path="/Seniorsclub" exact Component={Seniorsclub} />
         <Route path="/Karaokeclub" exact Component={Karaokeclub} />
         <Route path="/Sportsclub" exact Component={Sportsclub} />
+        <Route path="/RangtarangSummerPicnic2024" exact Component={RangtarangSummerPicnic2024} />  {/* Add the new route */}
       </Routes>
     </Router>
   );

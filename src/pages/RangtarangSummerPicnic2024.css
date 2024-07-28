@@ -1,0 +1,61 @@
+.event-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .event-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Ensure proper spacing around elements */
+    max-width: 1200px;
+    margin: 20px 0;
+  }
+  
+  .event-image {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .event-image img {
+    width: 150%; /* Increase image size by 1.5 times */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .event-text {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.75rem; /* Reduce text size to 50% */
+    order: 2; /* Ensure text is always in the middle */
+  }
+  
+  .event-image.left {
+    order: 1; /* Ensure the first image is on the left */
+  }
+  
+  .event-image.right {
+    order: 3; /* Ensure the second image is on the right */
+  }
+  
+  .event-text h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem; /* Adjust heading size if necessary */
+  }
+  
+  @media (max-width: 768px) {
+    .event-content {
+      flex-direction: column;
+    }
+  
+    .event-image img {
+      width: 100%; /* Ensure images fit well on smaller screens */
+    }
+  
+    .event-image, .event-text {
+      order: unset; /* Remove ordering for mobile view */
+    }
+  }
+  

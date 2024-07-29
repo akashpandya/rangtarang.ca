@@ -12,6 +12,36 @@ function Events() {
 
           <div className="carousel-item">
             <Link to="/RangtarangSummerPicnic2024">
+              <img src="images/navratri2024.jfif" alt="img_event_2" className="images_events" />
+              <div className="carousel-text">
+                <h2>RangTarang Navratri 2024</h2>
+                <p>
+                GTA's most original Malhar Group performed traditional ગરબા, રાસ, સનેડો and much more. Please called committee members to book admission passes.
+                Saw attached flyer for more information. Admission Fee: $ 10 per person (Age 5 and above). Friday 20th October, 2023 @ Audely Recreation Center
+                Banquet Hall, 1955 Audely Road in Ajax from 7.00 PM onwards. This event was sold out.
+                </p>
+              </div>
+            </Link>
+          </div>
+
+          
+
+          <h1 className="h1">Past Events</h1>
+
+          <div className="carousel-item">
+            <Link to="/Karaoke2024">
+              <img src="images/karaoke.jpg" alt="img_event_2" className="images_events" />
+              <div className="carousel-text">
+                <h2>Melodies of the Night: Community Karaoke Event</h2>
+                <p>
+                The community came together for a memorable karaoke night, singing both classic Bollywood hits and popular new songs. The atmosphere was electric as everyone, young and old, took turns at the microphone, showcasing their vocal talents. The event was a resounding success, filled with laughter, music, and a shared love for singing. It was a night of unity and joy, where the community bonded over the timeless magic of music.
+                </p>
+              </div>
+            </Link>
+          </div>
+
+          <div className="carousel-item">
+            <Link to="/RangtarangSummerPicnic2024">
               <img src="images/family_event.png" alt="img_event_2" className="images_events" />
               <div className="carousel-text">
                 <h2>RangTarang Summer Picnic 2024</h2>
@@ -25,8 +55,6 @@ function Events() {
               </div>
             </Link>
           </div>
-
-          <h1 className="h1">Past Events</h1>
 
           <div className="carousel-item">
             <img src="\images\img_event1_1.jpg" alt="img_event1_1" className="images_events" />

@@ -1,61 +1,67 @@
 .event-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-image: url("/public/images/clubs_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.event-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 20px 0;
+  flex-wrap: nowrap; /* Ensure that content doesn't wrap */
+}
+
+.event-image {
+  flex: 0 0 45%; /* Ensure images take up a set amount of space */
+  padding: 10px;
+}
+
+.event-image img {
+  width: 105%; /* Ensure images take up the full width of their container */
+  height: auto;
+  border-radius: 10px;
+}
+
+.event-text {
+  flex: 1;
+  padding: 30px;
+  text-align: center;
+  font-size: 0.80rem; /* Reduce text size to 50% */
+  order: 2; /* Ensure text is always in the middle */
+}
+
+.event-image.left {
+  order: 1; /* Ensure the first image is on the left */
+}
+
+.event-image.right {
+  order: 3; /* Ensure the second image is on the right */
+}
+
+.event-text h1, .event-text h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem; /* Adjust heading size if necessary */
+}
+
+@media (max-width: 768px) {
   .event-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-around; /* Ensure proper spacing around elements */
-    max-width: 1200px;
-    margin: 20px 0;
+    flex-direction: column;
   }
-  
-  .event-image {
-    flex: 1;
-    padding: 10px;
+
+  .event-image, .event-text {
+    order: unset; /* Remove ordering for mobile view */
+    flex: 1 0 auto; /* Ensure elements take full width on mobile */
   }
-  
+
   .event-image img {
-    width: 150%; /* Increase image size by 1.5 times */
-    height: auto;
-    border-radius: 10px;
+    width: 100%; /* Ensure images fit well on smaller screens */
   }
-  
-  .event-text {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-    font-size: 0.75rem; /* Reduce text size to 50% */
-    order: 2; /* Ensure text is always in the middle */
-  }
-  
-  .event-image.left {
-    order: 1; /* Ensure the first image is on the left */
-  }
-  
-  .event-image.right {
-    order: 3; /* Ensure the second image is on the right */
-  }
-  
-  .event-text h1 {
-    margin-bottom: 20px;
-    font-size: 1.5rem; /* Adjust heading size if necessary */
-  }
-  
-  @media (max-width: 768px) {
-    .event-content {
-      flex-direction: column;
-    }
-  
-    .event-image img {
-      width: 100%; /* Ensure images fit well on smaller screens */
-    }
-  
-    .event-image, .event-text {
-      order: unset; /* Remove ordering for mobile view */
-    }
-  }
-  
+}

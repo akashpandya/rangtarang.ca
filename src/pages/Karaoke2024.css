@@ -1,0 +1,53 @@
+.karaoke-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 800px;
+  }
+  
+  .video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    width: 300px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .video-container:hover {
+    transform: scale(1.1);
+  }
+  
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .video-container:hover .video {
+    filter: brightness(0.8);
+  }
+  
+  .video-container:hover .video.playing {
+    filter: brightness(1);
+  }
+  

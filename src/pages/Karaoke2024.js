@@ -1,48 +1,38 @@
-import React, { useRef, useEffect } from "react";
-import "./Karaoke2024.css";
+import React from 'react';
+import './Karaoke2024.css';
 
-function Karaoke2024() {
-  const videoRefs = useRef([]);
-
-  useEffect(() => {
-    videoRefs.current.forEach((video) => {
-      video.onmouseenter = () => {
-        setTimeout(() => {
-          video.play();
-          video.classList.add("playing");
-        }, 1000); // 1 second delay
-      };
-
-      video.onmouseleave = () => {
-        video.pause();
-        video.currentTime = 0;
-        video.classList.remove("playing");
-      };
-    });
-  }, []);
-
-  const videos = Array.from({ length: 29 }, (_, index) => `videos/karaoke_v_${String(index + 1).padStart(2, "0")}.mp4`);
+const Karaoke2024 = () => {
+  const videoFiles = Array.from({ length: 29 }, (_, index) => `videos/karaoke_v_${String(index + 1).padStart(2, '0')}.mp4`);
 
   return (
     <div className="karaoke-page">
-      <h1 className="title">Karaoke Night 2024</h1>
-      <p className="description">
-        The community came together for a memorable karaoke night, singing both classic Bollywood hits and popular new songs. The atmosphere was electric as everyone, young and old, took turns at the microphone, showcasing their vocal talents. The event was a resounding success, filled with laughter, music, and a shared love for singing. It was a night of unity and joy, where the community bonded over the timeless magic of music.
+      <h1>Karaoke Night 2024</h1>
+      <p>
+        Join us for a memorable night of karaoke, featuring classic Bollywood hits and popular new songs. The event promises a night filled with music, laughter, and community spirit.
       </p>
-      <div className="video-grid">
-        {videos.map((video, index) => (
-          <div key={index} className="video-container">
+      <div className="videos-container">
+        {videoFiles.map((videoSrc, index) => (
+          <div className="video-wrapper" key={index}>
             <video
-              src={video}
-              className="video"
+              src={videoSrc}
+              className="karaoke-video"
+              onMouseEnter={e => {
+                setTimeout(() => {
+                  e.target.play();
+                }, 1000);
+              }}
+              onMouseLeave={e => {
+                e.target.pause();
+                e.target.currentTime = 0;
+              }}
+              loop
               muted
-              ref={(el) => (videoRefs.current[index] = el)}
-            ></video>
+            />
           </div>
         ))}
       </div>
     </div>
   );
-}
+};
 
 export default Karaoke2024;

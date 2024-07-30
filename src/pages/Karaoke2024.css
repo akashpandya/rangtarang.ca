@@ -1,53 +1,33 @@
 .karaoke-page {
+    padding: 20px;
+    text-align: center;
+    background-image: url(/public/images/a4.jpg);
+    background-size: cover;
+    color: white;
+  }
+  
+  .videos-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
   }
   
-  .title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .description {
-    font-size: 1.25rem;
-    text-align: center;
-    margin-bottom: 40px;
-    max-width: 800px;
-  }
-  
-  .video-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .video-container {
-    position: relative;
+  .video-wrapper {
+    width: 300px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
     overflow: hidden;
-    width: 300px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
-    transition: transform 0.3s ease-in-out;
   }
   
-  .video-container:hover {
-    transform: scale(1.1);
-  }
-  
-  .video {
+  .karaoke-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s;
   }
   
-  .video-container:hover .video {
-    filter: brightness(0.8);
-  }
-  
-  .video-container:hover .video.playing {
-    filter: brightness(1);
+  .karaoke-video:hover {
+    transform: scale(1.1);
   }
   

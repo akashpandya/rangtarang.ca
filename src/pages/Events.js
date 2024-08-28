@@ -12,7 +12,8 @@ function Events() {
 
           <div className="carousel-item">
             <Link to="/RangtarangSummerPicnic2024">
-              <img src="images/navratri2024.jfif" alt="img_event_2" className="images_events" />
+              {/* Updated the src to use Jitu.jpg */}
+              <img src="images/Jitu.jpg" alt="img_event_2" className="images_events" />
               <div className="carousel-text">
                 <h2>RangTarang Navratri 2024</h2>
                 <p>
@@ -23,8 +24,6 @@ function Events() {
               </div>
             </Link>
           </div>
-
-          
 
           <h1 className="h1">Past Events</h1>
 

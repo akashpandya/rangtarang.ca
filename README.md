@@ -23,7 +23,32 @@ Help a community organization promote and manage its events online by building a
 
 🛠 Tools & Tech Stack
 
-| Tech
+| Tech         | Purpose                          |
+|--------------|----------------------------------|
+| React        | Front-end app framework          |
+| React Hooks  | State management and side effects|
+| HTML / CSS   | Layout and styling               |
+| JavaScript   | Interactivity and DOM logic      |
+| Netlify      | Deployment and hosting           |
+
+---
+
+📸 Screenshots
+
+_(You can add your screenshots here later)_
+
+---
+
+🌐 Live Site
+
+Coming soon — or you can deploy via Netlify/GitHub Pages.
+
+---
+
+👤 Author  
+**Akash Pandya**  
+Frontend Dev turned Data Analyst | React, HTML, CSS, JS  
+[Portfolio Website](https://aakashpandya.netlify.app) • [GitHub](https://github.com/akashpandya) • [LinkedIn](https://linkedin.com/in/akash-pandya100/)
 
 
 

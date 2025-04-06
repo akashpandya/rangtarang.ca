@@ -35,14 +35,13 @@ Help a community organization promote and manage its events online by building a
 
 📸 Screenshots
 
-_(You can add your screenshots here later)_
+![rangtarang](https://github.com/akashpandya/rangtarang.ca/assets/91130000/9579e8e9-daa4-4b05-9257-ed0d2db80edc)
 
 ---
 
 🌐 Live Site
 
-Coming soon — or you can deploy via Netlify/GitHub Pages.
-
+https://rangtarang.ca/
 ---
 
 👤 Author  
@@ -52,4 +51,3 @@ Frontend Dev turned Data Analyst | React, HTML, CSS, JS
 
 
 
-![rangtarang](https://github.com/akashpandya/rangtarang.ca/assets/91130000/9579e8e9-daa4-4b05-9257-ed0d2db80edc)
